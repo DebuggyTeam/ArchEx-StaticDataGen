@@ -1,0 +1,6 @@
+{
+    "error.template.notfound": "Template not found.",
+    "error.verify": "Verification of %s failed.",
+    "verify.identifier": "Identifier",
+    "verify.mapcolor": "Map Color"
+}
