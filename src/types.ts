@@ -118,12 +118,12 @@ export const ArchExMapColor = [
     "glow_lichen"
 ] as const
 
+export type ArchExMapColor = (typeof ArchExMapColor)[number]
+
 export type TypedBlockSet = {
     readonly block_types: ArchExBlockType[],
     readonly recipe: ArchExRecipe
 }
-
-export type ArchExMapColor = (typeof ArchExMapColor)[number]
 
 export type ArchExJson = {
     only_if_present?: string
