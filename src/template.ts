@@ -18,6 +18,11 @@ export const templates = {
     // }
 } as { readonly [K in string]?: TypedBlockSet }
 
+/**
+ * Used to create a JSON from a template.
+ * 
+ * User is expected to edit the values afterwards.
+ */
 export function create_from_template(template_name: string, base_block = "block_name_goes_here", map_color: ArchExMapColor = "wood"): ArchExJson|string {
     const template = templates[template_name]
     if (!template) return translate("error.template.notfound")
